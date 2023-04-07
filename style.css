@@ -11,6 +11,9 @@
  #000117
  */
 
+ body {
+    background: #F0DB4F;
+ }
 
  .img_nav {
     width: 200px;
