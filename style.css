@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+body {
+    background: #F0DB4F;
+    
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 190px;
+    padding: 5px 10px;
+    z-index: 1;
+}
+
+
+.navbar img {
+    height: 200px;
+    width: auto;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.navbar img:hover {
+    transform: scale(1.2);
+}
+
+.nav_items .menu_nav {
+    list-style: none;
+}
+
+.nav_items .menu_nav li {
+    display: inline-block;
+    padding: 0 50px;
+}
+
+.nav_items .menu_nav li a {
+    text-decoration: none;
+    color: #000117;
+    font-weight: 700;
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.nav_items .menu_nav li:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid #F0DB4F;
+
+}
+
+.nav_items .menu_nav .toggle_menu {
+    display: none;
+}
+
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    
+}
+
+.hero_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.hero_main h1{
+    font-size: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 100px;
+    color: #32333D ;
+}
+
+.hero_main .btn_hero {
+    padding: 20px;
+    color: #F0DB4F;
+    background-color: #32333D;
+    border-radius: 50px;
+    border: none;
+    transition: .2s;
+    margin-top: 50px;
+}
+
+.hero_main .btn_hero:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 8px 8px #000117;
+    transition: .2s;
+    cursor: pointer;
+}
+
+/* FIN HERO */
+
+
+/* MEDIAQUERIES */
+
+@media (max-width:560px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .nav_items .menu_nav li {
+        display:block;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        width: 100%;
+        text-align: center;
+        background-color: #F0DB4F;
+        border-radius: 20px;
+    }
+
+    .nav_items .menu_nav li a {
+        display: block;
+        font-size: 20px;
+        margin: 10px;
+        padding: 5px;
+        gap: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
