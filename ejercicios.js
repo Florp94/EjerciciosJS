@@ -3,7 +3,7 @@
 
 
 let numero;
-numero = prompt("Introducí un número")
+numero = 20;
 if (numero % 2 === 0) {
     console.log("El Número " + numero + " Es Par");
 }
@@ -41,6 +41,11 @@ else {
 
 // 4- Crear una función que reciba un número por parámetro e imprima por consola todos los números desde el 0 hasta llegar a ese número.
 
+let i= 0;
+while (i <= 20) {
+    console.log (i);
+    i++; 
+}
 
 // 5 - Crear una función que reciba una palabra y un número por parámetro e imprima por consola  esa palabra la cantidad correspondiente al número indicado.
 
@@ -71,4 +76,13 @@ for (Multiplode10 of Numeros) {
 
 // 8 - Crea una función que reciba un array de números y un número por parámetro e imprima por consola cada número del array multiplicado por el número pasado por parámetro.
 
-let NumeroArray = [1, 2, 3, 4, 5, 6, 7]
+let ArrayM = [2, 3, 4, 5, 6];
+
+function arrayMultiplicado (ArrayM, num){
+    for (let i = 0; i < ArrayM.length; i++) {
+        let resultado = ArrayM[i] * num;
+        console.log(resultado);
+    }
+}
+
+    arrayMultiplicado(ArrayM, 4);

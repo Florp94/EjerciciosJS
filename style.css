@@ -75,4 +75,12 @@
         box-shadow: 2px 4px 20px #000117;
     }
 } 
+
+@media (max-width: 2000px) {
+    .menu_toggle, label {
+        display: none;
+    }
+
+    
+}
  
